@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <div class="bg-dark pt-2 pb-2">
+    <div class="container">
+        <h1 class="text-center text-white">Weather Dashboard</h1>
+      </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 bg-light pt-3 pb-6">
+             <h3>City Search:</h3>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="City Name" aria-label="City Name" aria-describedby="button-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button" id="search button"><i class="fas fa-search-location"></i></button>
+            </div>
+        </div>
+     </div>
+    </div>
+  </div>
+ 
+    <div class="card">
+        <div class="row">
+            <div class="col-lg-3 bg-light pt-3 pb-6">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Morbi leo risus</li>
+                    <li class="list-group-item">Morbi leo risus</li>
+                    <li class="list-group-item">Porta ac consectetur ac</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                  </ul>
+            </div>
+    </div>
+</div> 
+<div class="col-lg-9">
+    <div class="mt-4">
+
+        <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                  <img src="" alt="">
+              </h5>
+              <p class="card-text">Temperature: </p>
+              <p class="card-text">Humidity: </p>
+              <p class="card-text">Wind Speed: </p>
+              <p class="card-text">UV Index: </p>
+            </div>
+        </div>
+
+    </div>
+</div> <!-- End column -->
+</div>
+  
+  
+    <script src="script.js"></script>  
+</body>
+</html>
