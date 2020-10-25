@@ -93,7 +93,7 @@ $(document).ready(function() {
                     //                 $("#today .card-body").append(uv.append(btn));
                     //             },
                     // ),
-                
+
                 var history = JSON.parse(window.localStorage.getItem("history")) || [];
                 if (history.length > 0) {
                     searchWeather(history[history.length - 1]);
@@ -102,5 +102,3 @@ $(document).ready(function() {
                     makeRow(history[i]);
                 }
             });
-
-                                                 
