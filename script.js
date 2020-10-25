@@ -35,7 +35,7 @@ $(document).ready(function() {
                     var humid = $("<p>").addClass("card-text").text("Humidity: " + data.main.humidity + "%");
                     var temp = $("<p>").addClass("card-text").text("Temperature: " + data.main.temp + " F");
                     var cardBody = $("<div>").addClass("card-body");
-                    var img = $('<img>').attr('src', 'http://openweathermap.org/img/w/' + data.weather[0].icon + '.png');
+                    var img = $("<img>").attr("src", "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png");
 
                     title.append(img);
                     cardBody.append(title, temp, humid, wind);
@@ -61,7 +61,7 @@ $(document).ready(function() {
                                     var col = $("<div>").addClass("col-md-2");
                                     var card = $("<div").addClass("card bg-primary text-white");
                                     var body = $("<div>").addClass("card-body p-2");
-                                    var title = $("<h5>").addClass("card-title").text(new Data(data.list[i].dt_txt).toLocaleDateString());
+                                    var title = $("<h5>").addClass("card-title").text(new Date(data.list[i].dt_txt).toLocaleDateString());
                                     var img = $("<img>").attr("src", "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png");
                                     var p1 = $("<p>").addClass("card-text").text("Temp: " + data.list[i].main.temp_max + " F");
                                     var p2 = $("<p>").addClass("card-text").text("Humidity: " + data.list[i].main.humidity + "%");
@@ -72,28 +72,7 @@ $(document).ready(function() {
                             }
                         });
                     }
-                //     function getUvIndex(lat, lon) {
-                //         $.ajax({
-                //             type: "GET",
-                //             url: "http://api.openweathermap.org/data/2.5/uvi?appid=882ca40da4b5add8ce478108bceea4db&lat=" + lat + "&lon=" + lon,
-                //             dataType: "json",
-                //             }).then(
-                //                 function(data) {
-                //                     var uv = $("<p>").text("UV Index: ");
-                //                     var btn = $("<span>").addClass("btn btn-sm").text(data.value);
-                //                     if (data.value < 3) {
-                //                         btn.addClass("btn-success");
-                //                     }
-                //                     else if (data.value < 7) {
-                //                         btn.addClass("btn-danger");
-                //                     }
-                //                     else {
-                //                         btn.addClass("btn-danger");
-                //                     }
-                //                     $("#today .card-body").append(uv.append(btn));
-                //                 }
-                //     }),
-                // }  
+                //  
                 var history = JSON.parse(window.localStorage.getItem("history")) || [];
                 if (history.length > 0) {
                     searchWeather(history[history.length - 1]);
